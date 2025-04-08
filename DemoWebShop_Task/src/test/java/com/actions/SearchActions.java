@@ -19,7 +19,7 @@ public class SearchActions {
     	this.sp=new SearchPage();
     	PageFactory.initElements(HelperClass.getDriver(),sp);
        try {
-            file=new File("C:\\Users\\kirub\\Documents\\DemoWebShop_Task\\DemoWebShop_Task\\src\\test\\resources\\SearchOptions.properties");
+            file=new File("C:\\Users\\kirub\\git\\Demo\\DemoWebShop_Task\\src\\test\\resources\\SearchOptions.properties");
             fis=new FileInputStream(file);
             prop=new Properties();
             prop.load(fis);

@@ -2,9 +2,14 @@ package com.actions;
 import com.utils.*;
 
 import java.io.IOException;
+import java.time.Duration;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.pages.CheckOutPage;
 import com.pages.HomePage;
@@ -35,7 +40,10 @@ public void addressFilling() throws IOException, InterruptedException{
 	String zip=data[3];
 	String mob=data[4];
 	String fax=data[5];
-	cp.add1.sendKeys(add1);
+	Thread.sleep(3000);
+	WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(20));
+	WebElement add= wait.until(ExpectedConditions.elementToBeClickable(By.id("BillingNewAddress_City")));
+	add.sendKeys(add1);
 	cp.add2.sendKeys(add2);
 	cp.fax.sendKeys(fax);
 	cp.zip.sendKeys(zip);

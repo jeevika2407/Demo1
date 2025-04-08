@@ -1,6 +1,13 @@
 package com.pages;
+import java.time.Duration;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import com.utils.HelperClass;
 public class CheckOutPage {
 	@FindBy(xpath="//select[@id=\"CountryId\"]")
 	public WebElement cId;
@@ -8,8 +15,6 @@ public class CheckOutPage {
 	public WebElement terms;
 	@FindBy(id="checkout")
 	public WebElement ckout;
-	@FindBy(id="BillingNewAddress_City")
-	public WebElement add1;
 	@FindBy(id="BillingNewAddress_Address2")
 	public WebElement add2;
 	@FindBy(id="BillingNewAddress_ZipPostalCode")

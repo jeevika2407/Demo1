@@ -6,5 +6,5 @@ Feature: Login Feature
     Then the user should see the message "<message>"
   Examples:
     | username         | password | message                                																							|
-    | gayu3@gmail.com  | 123456   | Welcome to the new Tricentis store!    																							|
-    | gayu@gmail.com   | 123456   | Put your login / registration information here. You can edit this in the admin site.|                   
+    | jeevbalajj@gmail.com  | 123456   | Welcome to the new Tricentis store!    																							|
+    | 123@gmail.com   | 123456   | Put your login / registration information here. You can edit this in the admin site.|                   

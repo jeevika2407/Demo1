@@ -9,9 +9,10 @@ import io.cucumber.testng.CucumberOptions;
 	        "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
 	        "rerun:target/failedrerun.txt"
 	    },
-	    features = "C:\\Users\\kirub\\Documents\\DemoWebShop_Task\\DemoWebShop_Task\\src\\test\\resources\\Features",
+	    features = "C:\\Users\\kirub\\git\\Demo\\DemoWebShop_Task\\src\\test\\resources\\Features",
 	    glue = "com.definitions"
 	)
 public class TestNGRunner extends AbstractTestNGCucumberTests{
 
 }
+

@@ -32,7 +32,7 @@ public class SearchDefinitions {
 	}
 	@Then("verify the product added to the cart")
 	public void verify_the_product_added_to_the_cart() {
-	    String ex="Smartphone";
+	    String ex="Computing and Internet";
 	    String ac=sa.proText();
 	    Assert.assertEquals(ex,ac);
 	    log.info("Product successfully added to cart and verification passed.");

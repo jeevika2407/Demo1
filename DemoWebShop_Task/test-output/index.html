@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\kirub\Documents\DemoWebShop_Task\DemoWebShop_Task\testng.xml</span>
+                    <span>C:\Users\kirub\git\Demo\DemoWebShop_Task\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.runner.TestNGRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check out the product from the cart&quot;, &quot;CheckOut the Product&quot;)">runScenario("Check out the product from the cart", "CheckOut the Product")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -108,17 +122,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.runner.TestNGRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login with valid details&quot;, &quot;Login Feature&quot;)">runScenario("Login with valid details", "Login Feature")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.runner.TestNGRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Search for the product&quot;, &quot;Search For the Product&quot;)">runScenario("Search for the product", "Search For the Product")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.runner.TestNGRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check out the product from the cart&quot;, &quot;CheckOut the Product&quot;)">runScenario("Check out the product from the cart", "CheckOut the Product")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.runner.TestNGRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login with valid details&quot;, &quot;Login Feature&quot;)">runScenario("Login with valid details", "Login Feature")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -133,22 +142,43 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.runner.TestNGRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check out the product from the cart&quot;, &quot;CheckOut the Product&quot;)">
+                  </a> <!-- runScenario("Check out the product from the cart", "CheckOut the Product") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check out the product from the cart","CheckOut the Product")</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.id: BillingNewAddress_City (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\kirub\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62732}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62732/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f19df846271811fd970afad05b10a6e1
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.actions.ChcekOutActions.addressFilling(ChcekOutActions.java:45)
+	at com.definitions.CheckOutDefinitions.verify_checkout(CheckOutDefinitions.java:34)
+	at ✽.the user should go to the check out page(file:///C:/Users/kirub/git/Demo/DemoWebShop_Task/src/test/resources/Features/AddToCartFeature.feature:13)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">com.runner.TestNGRunner</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Login with valid details&quot;, &quot;Login Feature&quot;)">
-                  </a> <!-- runScenario("Login with valid details", "Login Feature") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Login with valid details","Login Feature")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="runScenario(&quot;Login with valid details&quot;, &quot;Login Feature&quot;)">
@@ -171,10 +201,10 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Check out the product from the cart&quot;, &quot;CheckOut the Product&quot;)">
-                  </a> <!-- runScenario("Check out the product from the cart", "CheckOut the Product") -->
+                  <a name="runScenario(&quot;Login with valid details&quot;, &quot;Login Feature&quot;)">
+                  </a> <!-- runScenario("Login with valid details", "Login Feature") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Check out the product from the cart","CheckOut the Product")</span>
+                  <span class="parameters">("Login with valid details","Login Feature")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -184,7 +214,7 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\kirub\Documents\DemoWebShop_Task\DemoWebShop_Task\testng.xml</span>
+            <span class="header-content">C:\Users\kirub\git\Demo\DemoWebShop_Task\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -248,24 +278,24 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'com.runner.TestNGRunner')
-data.setCell(0, 3, 15857);
+data.setCell(0, 3, 35411);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'com.runner.TestNGRunner')
-data.setCell(1, 3, 12372);
+data.setCell(1, 3, 12347);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'runScenario')
 data.setCell(2, 2, 'com.runner.TestNGRunner')
-data.setCell(2, 3, 7814);
+data.setCell(2, 3, 6546);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'runScenario')
 data.setCell(3, 2, 'com.runner.TestNGRunner')
-data.setCell(3, 3, 5875);
+data.setCell(3, 3, 4996);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 41 seconds</span>
+              <span class="suite-total-time">Total running time: 59 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -293,28 +323,30 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.runner.TestNGRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@7f8cd5fc)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@5a3be84)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">runScenario("Check out the product from the cart", "CheckOut the Product")</span>
-                <span class="method-start">1980 ms</span>
+                <span class="method-start">1297 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Login with valid details", "Login Feature")</span>
-                <span class="method-start">17845 ms</span>
+                <span class="method-start">36724 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Login with valid details", "Login Feature")</span>
-                <span class="method-start">25662 ms</span>
+                <span class="method-start">43274 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Search for the product", "Search For the Product")</span>
-                <span class="method-start">31540 ms</span>
+                <span class="method-start">48274 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">43941 ms</span>
+                <span class="method-start">60634 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

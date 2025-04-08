@@ -12,4 +12,4 @@ Feature: Search For the Product
 		
   Examples:
     | username         | password | message                            |
-    | gayu3@gmail.com  | 123456   | Welcome to the new Tricentis store!|
+    | jeevbalajj@gmail.com  | 123456   | Welcome to the new Tricentis store!|
