@@ -1781,3 +1781,83 @@
 2025-04-08 21:53:27 [main] INFO : Navigating to the shopping cart.
 2025-04-08 21:53:28 [main] INFO : Product successfully added to cart and verification passed.
 2025-04-08 21:53:28 [main] INFO : Closing the Browser
+2025-04-08 23:23:47 [main] INFO : Launching DemoWebShop Login page
+2025-04-08 23:23:49 [main] INFO : Entering login credentials
+2025-04-08 23:23:50 [main] INFO : Clicking login button
+2025-04-08 23:23:51 [main] INFO : Login validation successful
+2025-04-08 23:23:51 [main] INFO : Navigating to the shopping cart.
+2025-04-08 23:23:52 [main] INFO : Product successfully added to cart and verification passed.
+2025-04-08 23:23:53 [main] INFO : Clicking the checkout button
+2025-04-08 23:23:55 [main] INFO : Verifying checkout page.
+2025-04-08 23:23:55 [main] INFO : Checkout page verification successful
+2025-04-08 23:24:19 [main] INFO : Closing the Browser
+2025-04-08 23:24:21 [main] INFO : Launching DemoWebShop Login page
+2025-04-08 23:24:27 [main] INFO : Entering login credentials
+2025-04-08 23:24:27 [main] INFO : Clicking login button
+2025-04-08 23:24:29 [main] INFO : Login validation successful
+2025-04-08 23:24:29 [main] INFO : Closing the Browser
+2025-04-08 23:24:31 [main] INFO : Launching DemoWebShop Login page
+2025-04-08 23:24:33 [main] INFO : Entering login credentials
+2025-04-08 23:24:33 [main] INFO : Clicking login button
+2025-04-08 23:24:34 [main] INFO : Invalid login correctly rejected
+2025-04-08 23:24:34 [main] INFO : Closing the Browser
+2025-04-08 23:24:36 [main] INFO : Launching DemoWebShop Login page
+2025-04-08 23:24:38 [main] INFO : Entering login credentials
+2025-04-08 23:24:38 [main] INFO : Clicking login button
+2025-04-08 23:24:41 [main] INFO : Login validation successful
+2025-04-08 23:24:41 [main] INFO : Searching the product using the search bar.
+2025-04-08 23:24:42 [main] INFO : Applying filter options and clicking save.
+2025-04-08 23:24:45 [main] INFO : Clicking 'Add to Cart' button.
+2025-04-08 23:24:46 [main] INFO : Navigating to the shopping cart.
+2025-04-08 23:24:47 [main] INFO : Product successfully added to cart and verification passed.
+2025-04-08 23:24:47 [main] INFO : Closing the Browser
+2025-04-08 23:36:38 [main] INFO : Launching DemoWebShop Login page
+2025-04-08 23:36:40 [main] INFO : Entering login credentials
+2025-04-08 23:36:40 [main] INFO : Clicking login button
+2025-04-08 23:36:44 [main] INFO : Login validation successful
+2025-04-08 23:36:44 [main] INFO : Navigating to the shopping cart.
+2025-04-08 23:36:45 [main] INFO : Product successfully added to cart and verification passed.
+2025-04-08 23:36:46 [main] INFO : Clicking the checkout button
+2025-04-08 23:36:48 [main] INFO : Verifying checkout page.
+2025-04-08 23:36:48 [main] INFO : Checkout page verification successful
+2025-04-08 23:37:12 [main] INFO : Closing the Browser
+2025-04-08 23:37:14 [main] INFO : Launching DemoWebShop Login page
+2025-04-08 23:37:16 [main] INFO : Entering login credentials
+2025-04-08 23:37:17 [main] INFO : Clicking login button
+2025-04-08 23:37:19 [main] INFO : Login validation successful
+2025-04-08 23:37:19 [main] INFO : Closing the Browser
+2025-04-08 23:37:21 [main] INFO : Launching DemoWebShop Login page
+2025-04-08 23:37:24 [main] INFO : Entering login credentials
+2025-04-08 23:37:25 [main] INFO : Clicking login button
+2025-04-08 23:37:26 [main] INFO : Invalid login correctly rejected
+2025-04-08 23:37:26 [main] INFO : Closing the Browser
+2025-04-08 23:37:28 [main] INFO : Launching DemoWebShop Login page
+2025-04-08 23:37:30 [main] INFO : Entering login credentials
+2025-04-08 23:37:30 [main] INFO : Clicking login button
+2025-04-08 23:37:33 [main] INFO : Login validation successful
+2025-04-08 23:37:33 [main] INFO : Searching the product using the search bar.
+2025-04-08 23:37:34 [main] INFO : Applying filter options and clicking save.
+2025-04-08 23:37:37 [main] INFO : Clicking 'Add to Cart' button.
+2025-04-08 23:37:38 [main] INFO : Navigating to the shopping cart.
+2025-04-08 23:37:38 [main] INFO : Product successfully added to cart and verification passed.
+2025-04-08 23:37:38 [main] INFO : Closing the Browser
+2025-04-08 23:40:29 [main] INFO : Launching DemoWebShop Login page
+2025-04-08 23:40:31 [main] INFO : Entering login credentials
+2025-04-08 23:40:31 [main] INFO : Clicking login button
+2025-04-08 23:40:34 [main] INFO : Login validation successful
+2025-04-08 23:40:34 [main] INFO : Closing the Browser
+2025-04-08 23:40:36 [main] INFO : Launching DemoWebShop Login page
+2025-04-08 23:40:38 [main] INFO : Entering login credentials
+2025-04-08 23:40:39 [main] INFO : Clicking login button
+2025-04-08 23:40:40 [main] INFO : Invalid login correctly rejected
+2025-04-08 23:40:40 [main] INFO : Closing the Browser
+2025-04-08 23:40:42 [main] INFO : Launching DemoWebShop Login page
+2025-04-08 23:40:45 [main] INFO : Entering login credentials
+2025-04-08 23:40:45 [main] INFO : Clicking login button
+2025-04-08 23:40:47 [main] INFO : Login validation successful
+2025-04-08 23:40:47 [main] INFO : Searching the product using the search bar.
+2025-04-08 23:40:48 [main] INFO : Applying filter options and clicking save.
+2025-04-08 23:40:51 [main] INFO : Clicking 'Add to Cart' button.
+2025-04-08 23:40:51 [main] INFO : Navigating to the shopping cart.
+2025-04-08 23:40:52 [main] INFO : Product successfully added to cart and verification passed.
+2025-04-08 23:40:52 [main] INFO : Closing the Browser

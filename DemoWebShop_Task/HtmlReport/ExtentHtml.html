@@ -40,7 +40,6 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 			<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
-			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
 		</ul>
 		<!-- report name -->
@@ -50,7 +49,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Apr 8, 2025 09:52:33 pm</span>
+			<span class='label blue darken-3 suite-start-time'>Apr 8, 2025 11:40:24 pm</span>
 			</a>
 		</ul>
 	</div>
@@ -66,7 +65,6 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
-					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -78,7 +76,6 @@
 				<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@Checkout_the_product</a></li>
 					<li><a href='#'>@validDetails</a></li>
 					<li><a href='#'>@Searching_for_product</a></li>
 					<li class='divider'></li>
@@ -122,12 +119,12 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='$66%'>
+                    <span class='tooltipped' data-position='top' data-tooltip='$100%'>
                     <span class='strong'>2</span> features passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='33%'>
-                    1</span> features failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> features failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped
                 </div>
@@ -140,12 +137,12 @@
                     <canvas id='child-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='75%'>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'>
                     <span class='strong'>3</span> scenarios passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='25%'>
-                    1</span> scenarios failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> scenarios failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -160,12 +157,12 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='95%'>
-                    <span class='strong'>21</span> steps passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'>
+                    <span class='strong'>14</span> steps passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='4%'>
-                    1</span> steps failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> steps failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -188,11 +185,11 @@
 	<div class='subview-left left'>
 		<div class='view-summary'>
 			<ul id='test-collection' class='test-collection'>
-				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>CheckOut the Product</span>
-						<span class='test-time'>Apr 8, 2025 09:52:34 pm</span>
-						<span class='test-status right fail'>Fail</span>
+						<span class='test-name'>Login Feature</span>
+						<span class='test-time'>Apr 8, 2025 11:40:25 pm</span>
+						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class="sr-filters bdd-filters">
@@ -202,22 +199,22 @@
 	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
 </div>
 
-<div class='scenario outline node' test-id='2' status='fail'>
+<div class='scenario outline node' test-id='2' status='pass'>
 
-	<span class='duration right label'>00 00 35.281</span>
+	<span class='duration right label'>00 00 14.857</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario Outline: Check out the product from the cart</div>
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Login with valid details</div>
 	</div>
 	
-		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>username</td><td>password</td><td>message</td></tr><tr><td>jeevbalajj@gmail.com</td><td>123456</td><td>Welcome to the new Tricentis store!</td></tr></table></div>
+		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>username</td><td>password</td><td>message</td></tr><tr><td>jeevbalajj@gmail.com</td><td>123456</td><td>Welcome to the new Tricentis store!</td></tr><tr><td>123@gmail.com</td><td>123456</td><td>Put your login / registration information here. You can edit this in the admin site.</td></tr></table></div>
 	
 	
 	<ul class='steps'>
-		<li test-id='3' class='node scenario Fail' status='Fail'>
-			<div class="step-name" title="()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Check out the product from the cart</div>
+		<li test-id='3' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Login with valid details</div>
 
 				<div class='category-list'>
-						<span class='category label'>@Checkout_the_product</span>
+						<span class='category label'>@validDetails</span>
 				</div>
 
 			<ul class='gc steps'>
@@ -233,71 +230,9 @@
 					<h6 class="step-name" title="com.definitions.LoginDefinitions.chcekLogin(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the user should see the message "Welcome to the new Tricentis store!"</h6>
 
 				</li>
-				<li test-id='8' class='gc then Pass' status='Pass'>
-					<h6 class="step-name" title="com.definitions.SearchDefinitions.shopping_cart()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Go to the shopping cart</h6>
-
-				</li>
-				<li test-id='9' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.definitions.SearchDefinitions.verify_the_product_added_to_the_cart()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And verify the product added to the cart</h6>
-
-				</li>
-				<li test-id='10' class='gc when Pass' status='Pass'>
-					<h6 class="step-name" title="com.definitions.CheckOutDefinitions.checkout_details(io.cucumber.datatable.DataTable)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the userr enters the checkout Details</h6>
-
-							<div class="node-step"><table class='markup-table table '><tr><td>country</td></tr><tr><td>India</td></tr></table></div>
-				</li>
-				<li test-id='11' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.definitions.CheckOutDefinitions.chcekout()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Cliks the check out button</h6>
-
-				</li>
-				<li test-id='12' class='gc then Fail' status='Fail'>
-					<h6 class="step-name" title="com.definitions.CheckOutDefinitions.verify_checkout()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Then the user should go to the check out page</h6>
-
-							<textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.id: BillingNewAddress_City (tried for 20 second(s) with 500 milliseconds interval)
-Build info: version: '4.30.0', revision: '509c7f17cc*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63121}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63121/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e4004793ec4d536d2d939bc754d55599
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.actions.ChcekOutActions.addressFilling(ChcekOutActions.java:45)
-	at com.definitions.CheckOutDefinitions.verify_checkout(CheckOutDefinitions.java:34)
-	at ✽.the user should go to the check out page(file:///C:/Users/kirub/git/Demo/DemoWebShop_Task/src/test/resources/Features/AddToCartFeature.feature:13)
-</textarea>
-				</li>
 			</ul>
 		</li>
-	</ul>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='14'>
-					<div class='test-heading'>
-						<span class='test-name'>Login Feature</span>
-						<span class='test-time'>Apr 8, 2025 09:53:09 pm</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class="sr-filters bdd-filters">
-	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
-	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
-	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
-	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
-</div>
-
-<div class='scenario outline node' test-id='15' status='pass'>
-
-	<span class='duration right label'>00 00 08.841</span>
-	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Login with valid details</div>
-	</div>
-	
-		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>username</td><td>password</td><td>message</td></tr><tr><td>jeevbalajj@gmail.com</td><td>123456</td><td>Welcome to the new Tricentis store!</td></tr><tr><td>123@gmail.com</td><td>123456</td><td>Put your login / registration information here. You can edit this in the admin site.</td></tr></table></div>
-	
-	
-	<ul class='steps'>
-		<li test-id='16' class='node scenario Pass' status='Pass'>
+		<li test-id='9' class='node scenario Pass' status='Pass'>
 			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Login with valid details</div>
 
 				<div class='category-list'>
@@ -305,37 +240,15 @@ Session ID: e4004793ec4d536d2d939bc754d55599
 				</div>
 
 			<ul class='gc steps'>
-				<li test-id='18' class='gc given Pass' status='Pass'>
+				<li test-id='11' class='gc given Pass' status='Pass'>
 					<h6 class="step-name" title="com.definitions.LoginDefinitions.launch(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given the user is on DemoWebShop Login page "https://demowebshop.tricentis.com/login"</h6>
 
 				</li>
-				<li test-id='19' class='gc when Pass' status='Pass'>
-					<h6 class="step-name" title="com.definitions.LoginDefinitions.login(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user enters valid "jeevbalajj@gmail.com" and "123456"</h6>
-
-				</li>
-				<li test-id='20' class='gc then Pass' status='Pass'>
-					<h6 class="step-name" title="com.definitions.LoginDefinitions.chcekLogin(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the user should see the message "Welcome to the new Tricentis store!"</h6>
-
-				</li>
-			</ul>
-		</li>
-		<li test-id='22' class='node scenario Pass' status='Pass'>
-			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Login with valid details</div>
-
-				<div class='category-list'>
-						<span class='category label'>@validDetails</span>
-				</div>
-
-			<ul class='gc steps'>
-				<li test-id='24' class='gc given Pass' status='Pass'>
-					<h6 class="step-name" title="com.definitions.LoginDefinitions.launch(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given the user is on DemoWebShop Login page "https://demowebshop.tricentis.com/login"</h6>
-
-				</li>
-				<li test-id='25' class='gc when Pass' status='Pass'>
+				<li test-id='12' class='gc when Pass' status='Pass'>
 					<h6 class="step-name" title="com.definitions.LoginDefinitions.login(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user enters valid "123@gmail.com" and "123456"</h6>
 
 				</li>
-				<li test-id='26' class='gc then Pass' status='Pass'>
+				<li test-id='13' class='gc then Pass' status='Pass'>
 					<h6 class="step-name" title="com.definitions.LoginDefinitions.chcekLogin(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the user should see the message "Put your login / registration information here. You can edit this in the admin site."</h6>
 
 				</li>
@@ -345,10 +258,10 @@ Session ID: e4004793ec4d536d2d939bc754d55599
 </div>
 					</div>
 				</li>
-				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='28'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='15'>
 					<div class='test-heading'>
 						<span class='test-name'>Search For the Product</span>
-						<span class='test-time'>Apr 8, 2025 09:53:18 pm</span>
+						<span class='test-time'>Apr 8, 2025 11:40:40 pm</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -359,9 +272,9 @@ Session ID: e4004793ec4d536d2d939bc754d55599
 	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
 </div>
 
-<div class='scenario outline node' test-id='29' status='pass'>
+<div class='scenario outline node' test-id='16' status='pass'>
 
-	<span class='duration right label'>00 00 10.321</span>
+	<span class='duration right label'>00 00 12.322</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Search for the product</div>
 	</div>
@@ -370,7 +283,7 @@ Session ID: e4004793ec4d536d2d939bc754d55599
 	
 	
 	<ul class='steps'>
-		<li test-id='30' class='node scenario Pass' status='Pass'>
+		<li test-id='17' class='node scenario Pass' status='Pass'>
 			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Search for the product</div>
 
 				<div class='category-list'>
@@ -378,35 +291,35 @@ Session ID: e4004793ec4d536d2d939bc754d55599
 				</div>
 
 			<ul class='gc steps'>
-				<li test-id='32' class='gc given Pass' status='Pass'>
+				<li test-id='19' class='gc given Pass' status='Pass'>
 					<h6 class="step-name" title="com.definitions.LoginDefinitions.launch(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given the user is on DemoWebShop Login page "https://demowebshop.tricentis.com/login"</h6>
 
 				</li>
-				<li test-id='33' class='gc when Pass' status='Pass'>
+				<li test-id='20' class='gc when Pass' status='Pass'>
 					<h6 class="step-name" title="com.definitions.LoginDefinitions.login(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When the user enters valid "jeevbalajj@gmail.com" and "123456"</h6>
 
 				</li>
-				<li test-id='34' class='gc then Pass' status='Pass'>
+				<li test-id='21' class='gc then Pass' status='Pass'>
 					<h6 class="step-name" title="com.definitions.LoginDefinitions.chcekLogin(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then the user should see the message "Welcome to the new Tricentis store!"</h6>
 
 				</li>
-				<li test-id='35' class='gc when Pass' status='Pass'>
+				<li test-id='22' class='gc when Pass' status='Pass'>
 					<h6 class="step-name" title="com.definitions.SearchDefinitions.search_the_product()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When search the product in search bar</h6>
 
 				</li>
-				<li test-id='36' class='gc and Pass' status='Pass'>
+				<li test-id='23' class='gc and Pass' status='Pass'>
 					<h6 class="step-name" title="com.definitions.SearchDefinitions.filter()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And user apply the filter options and clicks saves</h6>
 
 				</li>
-				<li test-id='37' class='gc and Pass' status='Pass'>
+				<li test-id='24' class='gc and Pass' status='Pass'>
 					<h6 class="step-name" title="com.definitions.SearchDefinitions.clicks_the_add_to_cart_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And clicks the Add to cart button</h6>
 
 				</li>
-				<li test-id='38' class='gc then Pass' status='Pass'>
+				<li test-id='25' class='gc then Pass' status='Pass'>
 					<h6 class="step-name" title="com.definitions.SearchDefinitions.shopping_cart()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Go to the shopping cart</h6>
 
 				</li>
-				<li test-id='39' class='gc and Pass' status='Pass'>
+				<li test-id='26' class='gc and Pass' status='Pass'>
 					<h6 class="step-name" title="com.definitions.SearchDefinitions.verify_the_product_added_to_the_cart()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And verify the product added to the cart</h6>
 
 				</li>
@@ -458,39 +371,6 @@ Session ID: e4004793ec4d536d2d939bc754d55599
 			<ul id='category-collection' class='category-collection'>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@Checkout_the_product</span>
-						<span class='category-status right'>
-						<span class='label fail'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							
-							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Apr 8, 2025 09:52:34 pm</td>
-										<td class='linked' test-id='3'>Check out the product from the cart</td>
-										<td><span class='test-status Fail'>Fail</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
 						<span class='category-name'>@validDetails</span>
 						<span class='category-status right'>
 						<span class='label pass'>2</span>
@@ -513,13 +393,13 @@ Session ID: e4004793ec4d536d2d939bc754d55599
 								</thead>
 								<tbody>
 									<tr>
-										<td>Apr 8, 2025 09:53:09 pm</td>
-										<td class='linked' test-id='16'>Login with valid details</td>
+										<td>Apr 8, 2025 11:40:25 pm</td>
+										<td class='linked' test-id='3'>Login with valid details</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 									<tr>
-										<td>Apr 8, 2025 09:53:14 pm</td>
-										<td class='linked' test-id='22'>Login with valid details</td>
+										<td>Apr 8, 2025 11:40:34 pm</td>
+										<td class='linked' test-id='9'>Login with valid details</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -551,8 +431,8 @@ Session ID: e4004793ec4d536d2d939bc754d55599
 								</thead>
 								<tbody>
 									<tr>
-										<td>Apr 8, 2025 09:53:18 pm</td>
-										<td class='linked' test-id='30'>Search for the product</td>
+										<td>Apr 8, 2025 11:40:40 pm</td>
+										<td class='linked' test-id='17'>Search for the product</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -569,73 +449,7 @@ Session ID: e4004793ec4d536d2d939bc754d55599
 		</div>
 	</div>
 </div>
-<!-- category view --><div id='exception-view' class='view hide'>
-	<section id='controls'>
-		<div class='controls grey lighten-4'>
-			<!-- search -->
-			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
-				<a href="#" class='search-div'>
-				<i class='material-icons'>search</i> Search
-				</a>
-				<div class='input-field left hide'>
-					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
-				</div>
-			</div>
-			<!-- search -->
-		</div>
-	</section>
-	<div class='subview-left left'>
-		<div class='view-summary'>
-			<ul id='exception-collection' class='exception-collection'>
-				<li class='exception displayed active'>
-					<div class='exception-heading'>
-						<span class='exception-name'>org.openqa.selenium.TimeoutException</span>
-						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
-					</div>
-					<div class='exception-content hide'>
-						<div class='exception-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>StackTrace</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Apr 8, 2025 09:52:45 pm</td>
-										<td class='linked' test-id='12'>Then the user should go to the check out page</td>
-										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.id: BillingNewAddress_City (tried for 20 second(s) with 500 milliseconds interval)
-Build info: version: '4.30.0', revision: '509c7f17cc*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63121}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63121/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e4004793ec4d536d2d939bc754d55599
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.actions.ChcekOutActions.addressFilling(ChcekOutActions.java:45)
-	at com.definitions.CheckOutDefinitions.verify_checkout(CheckOutDefinitions.java:34)
-	at ✽.the user should go to the check out page(file:///C:/Users/kirub/git/Demo/DemoWebShop_Task/src/test/resources/Features/AddToCartFeature.feature:13)
-</textarea>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<div class='subview-right left'>
-		<div class='view-summary'>
-			<h5 class='exception-name'></h5>
-		</div>
-	</div>
-</div>
-<!-- exception view --><div id='dashboard-view' class='view hide'>
+<!-- category view --><div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
 		<h5>Dashboard</h5>
 
@@ -643,37 +457,37 @@ Session ID: e4004793ec4d536d2d939bc754d55599
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Features
-					<div class='panel-lead'>3</div>
+					<div class='panel-lead'>2</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>4</div>
+					<div class='panel-lead'>3</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>22</div>
+					<div class='panel-lead'>14</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Apr 8, 2025 09:52:33 pm</div>
+					<div class='panel-lead'>Apr 8, 2025 11:40:24 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Apr 8, 2025 09:53:28 pm</div>
+			 		<div class='panel-lead'>Apr 8, 2025 11:40:53 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>00 00 55.310</div>
+					<div class='panel-lead'>00 00 28.552</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -709,15 +523,6 @@ Session ID: e4004793ec4d536d2d939bc754d55599
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>@Checkout_the_product</td>
-							<td>0</td>
-							<td>1</td>
-							<td>0</td>
-							<td>
-									0%
-							</td>
-						</tr>
-						<tr>
 							<td>@validDetails</td>
 							<td>2</td>
 							<td>0</td>
@@ -746,24 +551,24 @@ Session ID: e4004793ec4d536d2d939bc754d55599
 		<!-- container -->
 		<script>
 			var statusGroup = {
-                parentCount: 3,
+                parentCount: 2,
 				passParent: 2,
-				failParent: 1,
+				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				childCount: 4,
+				childCount: 3,
 				passChild: 3,
-				failChild: 1,
+				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				grandChildCount: 22,
-				passGrandChild: 21,
-				failGrandChild: 1,
+				grandChildCount: 14,
+				passGrandChild: 14,
+				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
@@ -774,7 +579,7 @@ Session ID: e4004793ec4d536d2d939bc754d55599
 		
 		<script>
 			var timeline = {
-			        "CheckOut the Product":35.287,"Login Feature":8.841,"Search For the Product":10.321
+			        "Login Feature":14.864,"Search For the Product":12.322
 			};
 		</script>
 		
